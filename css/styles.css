@@ -10,3 +10,28 @@
 	color: gray;
 	text-decoration: line-through;
 }
+
+h2 {
+	font-family: 'Just Another Hand', cursive; 	
+}
+
+body {
+	background-image: url("http://www.ambwallpapers.com/wp-content/uploads/2015/12/spring-in-nature-wide-wallpaper-603794-.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .9;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+

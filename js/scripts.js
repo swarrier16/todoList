@@ -21,19 +21,21 @@ angular.module("todoApp", [])
 		items.data.splice(index, 0);
 	};
 
-	todoList.remaining = function () {
-		var notCompletedCount = 0;
-		angular.forEach (todoList.TodoItems, function (todo){
-			notCompletedCount += todo.done; 
-		})
-
-		return notCompletedCount;
-	}
- 
-  		todoList.todoItems = [];
+	todoList.todoItems = [];
   		angular.forEach(oldTodos, function (todo) {
   			if (!todo.done) 
   				 todoList.todoItems.push(todo);
   		});
   	}
+
+	todoList.remaining = function () {
+		var notCompletedCount = 0;
+		angular.forEach (todoList.todoItems, function (todo){
+			notCompletedCount += todo.done ? 0:1;
+		})
+
+		return notCompletedCount
+	}
+ 
+  		
 }); // end TodoListController
