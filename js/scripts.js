@@ -1,6 +1,7 @@
 angular.module("todoApp", [])
 .controller("TodoListController", function($scope) {
 	var todoList = this;
+
 	todoList.todoItems = [
 		{ name: "Take out trash", done: false },
 		{ name: "Do homework", done: false},
@@ -39,3 +40,13 @@ angular.module("todoApp", [])
  
   		
 }); // end TodoListController
+
+$(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+
+
+        
